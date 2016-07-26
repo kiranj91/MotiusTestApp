@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private int[] tabIcons = {
             R.drawable.login,
             R.drawable.usecase,
-            R.drawable.blank
+            R.drawable.motiussmall
     };
 
     @Override
