@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MotiusTestApp</string>
+    <string name="Usecase">Usecase</string>
+    <string name="Login">Login</string>
+    <string name="Blank">Blank</string>
+    <string name="CenteredText">Motius Test App</string>
+    <string name="contentOfCText">Hey, Welcome to the Motius Test App. Please put two input fields below in order to fake a login/registration screen here. Nothing should happen when clicking the button.</string>
+</resources>
