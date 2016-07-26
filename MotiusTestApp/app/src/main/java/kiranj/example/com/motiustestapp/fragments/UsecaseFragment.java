@@ -1,4 +1,4 @@
-package kiranj.example.com.motiustestapp;
+package kiranj.example.com.motiustestapp.fragments;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -14,13 +14,20 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import kiranj.example.com.motiustestapp.CustomAdapter;
+import kiranj.example.com.motiustestapp.JSonParser;
+import kiranj.example.com.motiustestapp.R;
+import kiranj.example.com.motiustestapp.WebRequest;
+
 /**
  * Created by kiranj91 on 25-07-2016.
+ * Fragment class for Usecase tab.
  */
 public class UsecaseFragment extends ListFragment {
 
     public String urlString = "https://www.motius.de/api/usecases";
 
+    //Empty Constructor
     public UsecaseFragment() {
     }
 
@@ -55,9 +62,9 @@ public class UsecaseFragment extends ListFragment {
         protected Void doInBackground(Void... arg0) {
             WebRequest webrequest = new WebRequest();
 
-            // Making a request to url and getting response
+            // Making a request to url and getting response.
             String jsonString = webrequest.makeWebServiceCall(urlString, WebRequest.GET);
-            Log.d("Response: ", "> " + jsonString);
+            Log.d("JSon String: ", ": " + jsonString);
             usecaseList = new JSonParser().ParseJSON(jsonString);
             return null;
         }
@@ -65,6 +72,7 @@ public class UsecaseFragment extends ListFragment {
         @Override
         protected void onPostExecute(Void requestResult) {
             super.onPostExecute(requestResult);
+            //Dismissing the progress dialog.
             if (proDialog.isShowing())
                 proDialog.dismiss();
             //A custom adapter to display the usecases.

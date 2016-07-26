@@ -13,6 +13,7 @@ import java.util.regex.Pattern;
 
 /**
  * Created by kiranj on 26-07-2016.
+ * Parser class to parse JSon data.
  */
 public class JSonParser {
 
@@ -51,7 +52,7 @@ public class JSonParser {
 
     }
 
-    //Method to format the body(remove the unnecessary tags)
+    //Method to format the body(remove the unnecessary tags).
     private static String format(String body) {
 
         final Pattern pattern = Pattern.compile("<p>(.+?)</p>");

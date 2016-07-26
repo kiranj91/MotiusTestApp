@@ -17,6 +17,10 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 import java.util.List;
 
+import kiranj.example.com.motiustestapp.fragments.BlankFragment;
+import kiranj.example.com.motiustestapp.fragments.LoginFragment;
+import kiranj.example.com.motiustestapp.fragments.UsecaseFragment;
+
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;

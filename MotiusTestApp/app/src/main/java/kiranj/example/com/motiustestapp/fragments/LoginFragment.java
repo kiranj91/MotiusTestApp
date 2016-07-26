@@ -1,4 +1,4 @@
-package kiranj.example.com.motiustestapp;
+package kiranj.example.com.motiustestapp.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,8 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import kiranj.example.com.motiustestapp.R;
+
 /**
  * Created by kiranj on 25-07-2016.
+ * Fragment class for the Login tab.
  */
 public class LoginFragment extends Fragment {
 
@@ -19,6 +22,7 @@ public class LoginFragment extends Fragment {
     public EditText username;
     public EditText password;
 
+    //Empty Constructor
     public LoginFragment() {
     }
 

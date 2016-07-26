@@ -13,6 +13,7 @@ import java.util.HashMap;
 
 /**
  * Created by kiranj on 26-07-2016.
+ * Adapter class to list the title and body of the usecases.
  */
 public class CustomAdapter extends BaseAdapter {
 
